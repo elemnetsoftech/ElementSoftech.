@@ -1,175 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="veiwport" content="width=device-width,initial scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <title>Elementsoftech</title>
-</head>
-
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-desktop,.fa-coffee {font-size:200px}
+</style>
 <body>
-<header class="text-gray-700 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-                 stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-                 viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl">Elementsoftech</span>
-        </a>
-        <nav
-                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-            <a href="home.html" class="mr-5 hover:text-gray-900">HOME</a>
-            <a href="Products.html" class="mr-5 hover:text-gray-900">PRODUCTS</a>
-            <a href="contacts.html" class="mr-5 hover:text-gray-900">CONTACTS</a>
-        </nav>
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-             class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-        </button>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Products</a>
+        <a href="contacts.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contacts</a>
+        <a href="you.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Youtube Channel</a>
     </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">ELEMENTSOFTECH</h1>
+    <p class="w3-xlarge">The story of the fabulous founders...</p>
+    <img src="bro.png"/>
 </header>
 
-<section class="text-gray-700 body-font">
-    <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Yes, this is the team of Element</p>
-        </div>
-        <div class="flex flex-wrap -m-4">
-            <div class="p-4 lg:w-1/2">
-                <div
-                        class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-                         src="https://dummyimage.com/200x200">
-                    <div class="flex-grow sm:pl-8">
-                        <h2 class="title-font font-medium text-lg text-gray-900">Piyush Dhoble</h2>
-                        <h3 class="text-gray-500 mb-3">founder,WHC Head</h3>
-                        <h3 class="text-gray-500 mb-3">Fluent in Python, Java, HTML, BASIC</h3>
-                        <span class="inline-flex">
-                                <a class="text-gray-500">
-                                    <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                         class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-500">
-                                    <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                         class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                                        </path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-500">
-                                    <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                         class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </span>
-                    </div>
-                </div>
-            </div>
-            <div class="p-4 lg:w-1/2">
-                <div
-                        class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-                         src="https://dummyimage.com/200x200">
-                    <div class1x201="flex-grow sm:pl-8">
-                        <h2 class="title-font font-medium text-lg text-gray-900">Arnav Bhosale</h2>
-                        <h3 class="text-gray-500 mb-3">founder,Graphics Head</h3>
-                        <h3 class="text-gray-500 mb-3">Fluent in Python, Java , BASIC, HTML</h3>
-                        <span class="inline-flex">
-                                <a class="text-gray-500">
-                                    <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                         class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-500">
-                                    <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                         class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                                        </path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-500">
-                                    <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                         class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </span>
-                    </div>
-                </div>
-            </div>
-            <div class="p-4 lg:w-1/2">
-                <div
-                        class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-                         src="https://dummyimage.com/200x200">
-                    <div class="flex-grow sm:pl-8">
-                        <h2 class="title-font font-medium text-lg text-gray-900">Shaurya Pandey</h2>
-                        <h3 class="text-gray-500 mb-3">founder,TestSector Head</h3>
-                        <p class="mb-4">Fluent in Python , Java, HTML and BASIC</p>
-                        <span class="inline-flex">
-                                <a class="text-gray-500">
-                                    <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                         class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-500">
-                                    <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                         class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                                        </path>
-                                    </svg>
-                                </a>
-                                <a class="ml-2 text-gray-500">
-                                    <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                         class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path
-                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </span>
-                    </div>
-                </div>
-            </div>
-            <div class="p-4 lg:w-1/2">
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-twothird">
+            <h1>A BRIEF ON THE FOUNDERS...</h1>
+            <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+                <h1 class="w3-margin w3-jumbo">Piyush Dhoble: Fluent in python, java, html, BASIC</h1>
+                <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+                    <h1 class="w3-margin w3-jumbo">Shaurya Pandey: Fluent in python, java, html, BASIC</h1>
+                    <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+                        <h1 class="w3-margin w3-jumbo">Arnav Bhosale: Fluent in python, java, html, BASIC</h1>
 
-                <a class="ml-2 text-gray-500">
-                    <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                         class="w-5 h-5" viewBox="0 0 24 24">
-                        <path
-                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                        </path>
-                    </svg>
-                </a>
-                <a class="ml-2 text-gray-500">
-                    <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                         class="w-5 h-5" viewBox="0 0 24 24">
-                        <path
-                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                        </path>
-                    </svg>
-                </a>
-                </span>
-            </div>
+
+        </div>
+
+
+        <div class="w3-third w3-center">
+            <i class="fa fa-desktop w3-padding-64 w3-text-red"></i>
         </div>
     </div>
+</div>
+
+<!-- Second Grid -->
+        </div>
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">OUR MOTIVE = HELP YOU...</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+    <div class="w3-xlarge w3-padding-32">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
     </div>
-    </div>
-</section>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</body>
+</html>
